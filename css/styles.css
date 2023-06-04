@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.text-div {
+  display: grid;
+  place-content: center;
+  padding: 2% 5%;
+}
+
+.side-div {
+  position: absolute;
+  right: 0;
+  background-image: url(../img/picture.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 25%;
+  height: 50%;
+  border-radius: 12px 0px 0px 12px;
+  transform: translateX(100%);
+  transition: all 0.5s;
+}
+
+.active {
+  transform: translateX(0);
+}
